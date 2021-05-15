@@ -12,10 +12,10 @@ header{
 nav{
 	width: 100%;
 	height: 100px;
-	display:flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 100px;
+	display: flex;
 }
 
 
@@ -27,7 +27,7 @@ nav{
 
 }
 .logoo{
-	position: fixed;
+	
 	height: auto;
 	width: 100px;
 	left:0px;
@@ -39,6 +39,7 @@ nav{
  	padding: 10px 20px;
  	font-size: 20px;
  	color: pink;
+ 	float: right;
  	letter-spacing: 2px;
  	background: #A04000;
  	border-radius: 8px;
