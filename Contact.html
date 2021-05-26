@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <head>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="stylesheet" type="text/css" href="Contact.css">
-    	<link rel="preconnect" href="https://fonts.gstatic.com">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Home.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    </head>
-    <body>
-    	<header>
-    <nav>
-		    	<img src="logo.jpg" alt="its logo" class="logoo animate__animated animate__rubberBand">
-
-			<div class="logo animate__animated animate__rollIn"> Rupak </div>
-			
-			<div class="menu">
-				<a href="Sitereport.html">Sitereport</a>
-				<a href="Cv.html">CV</a>
-				<a href="Contact.html">Contact</a>
-				<a href="Portfolio.html">Portfolio</a>
-				<a href="Index.html">Home</a>	
-			</div>
-		</nav>
-		<div class="contact">
-			<form action="/action_page.php" method="get">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<nav>
+		
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<img  src="logo.jpg" alt="its logo" class="logoo animate__animated animate__rubberBand">
+		<label class="logo">Hello</label>
+		<ul>
+	            <li><a  href="Index.html">Home</a></li>  
+	            <li><a href="Portfolio.html">Portfolio</a></li>	
+	            <li><a class="active" href="Contact.html">Contact</a></li>	
+	            <li><a href="Cv.html">CV</a></li>
+	            <li><a href="Sitereport.html">Sitereport</a></li>
+			    
+		</ul>
+	</nav>
+	<div class="contact">
+	<section>
+		<h2>Contact me</h2>
+	<header>
+	<div class="contaact">
+			<form action="MAILTO:upreti.rupak@gmail.com" method="post" enctype="text/plain">
 				<fieldset class="field">
 				
 				<legend>Your information:</legend>
@@ -41,12 +48,12 @@
 				<input type="text" class="lastname" name="lastname">
 				<br>
 				Your date of birth<br>
-				<input type="date" class="date" name="DOB"min="1980-01-01">
+				<input type="date" class="date" name="DOB" min="1980-01-01">
 				<br>
 				Gender<br>
-				<input type="radio" name="gender"value="male"checked>Male<br>
-				<input type="radio" name="gender"value="female">Female<br>
-				<input type="radio" name="gender"value="others">Others<br>
+				<input type="radio" name="gender" value="male" checked>Male<br>
+				<input type="radio" name="gender" value="female">Female<br>
+				<input type="radio" name="gender" value="others">Others<br>
 				Parents name:<br>
 				<input type="text" class="parents" name="Parents name">
 				<br>
@@ -56,15 +63,13 @@
 				Your number:<br>
 				<input type="number" class="number" name="number">
 				<br>
-				<textarea id="message" rows="4"cols="80">Send us message</textarea>
+				<textarea id="message" rows="4" cols="80">Send us message</textarea>
 				<br>
 				<input type="submit" class="submit" value="Submit">
 			</fieldset>
 		</form>
-		</div>
-			</header>
+		</div></header>
+	</section>
+</div>
 </body>
-</head>
 </html>
-
-    	
