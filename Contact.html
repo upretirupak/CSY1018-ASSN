@@ -1,10 +1,15 @@
 <!DOCTYPE html>
+<!--opening tag of html -->
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<!--using meta for identifying character set -->
 	<title>Contact</title>
+	<!-- giving title to our page as contact-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--this is used for responsive view -->
 	<link rel="stylesheet" type="text/css" href="Home.css">
+	<!--linking our css -->
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 	 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
@@ -13,15 +18,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--these links are for font family and the animation used -->
 </head>
 <body>
 	<nav>
 		
 		<input type="checkbox" id="check">
+		<!--creating checkbox -->
 		<label for="check" class="checkbtn">
 			<i class="fas fa-bars"></i>
+			<!--using it create hamburger like menu  -->
 		</label>
 		<img  src="logo.jpg" alt="its logo" class="logoo animate__animated animate__rubberBand">
+		<!--creating a logo in nav and giving its animation -->
 		
 		<ul>
 	            <li><a  href="Index.html">Home</a></li>  
@@ -29,46 +38,64 @@
 	            <li><a class="active" href="Contact.html">Contact</a></li>	
 	            <li><a href="Cv.html">CV</a></li>
 	            <li><a href="Sitereport.html">Sitereport</a></li>
+	            <!--linking different pages using anchor tags -->
 			    
 		</ul>
 	</nav>
 	<div class="contact">
+		<!--a new div with clas contact is created -->
 	<header>
 		<br><h2>Contact Me</h2><hr>
+		<!-- a title for the header-->
 		<img src="about.jpg" alt="its about me " class="about">
+		<!--adding image about me and my information -->
         <div class="contaact">
+        	<!--a new div name contaact is created -->
         	<form action="MAILTO:upreti.rupak@gmail.com" method="post" enctype="text/plain">
+        		<!--a form is created and given action to open mail and for my email -->
 				<fieldset class="field">
+					<!--a fieldset is created inside form -->
 				
 				<legend>Your information:</legend>
 				First name:<br>
 				<input type="text" class="firstname"  name="firstname">
 				<br>
+				<!-- here this is for the firstname  -->
 				Last name:<br>
 				<input type="text" class="lastname" name="lastname">
 				<br>
+				<!--for the lastname  -->
 				Your date of birth<br>
 				<input type="date" class="date" name="DOB" min="1980-01-01">
 				<br>
+				<!--this is for date of birth containing calendaar having minimum date of 1980/01/01 -->
 				Gender<br>
 				<input type="radio" name="gender" value="male" checked>Male<br>
 				<input type="radio" name="gender" value="female">Female<br>
 				<input type="radio" name="gender" value="others">Others<br>
+				<!-- creating a radio buttom for the gender-->
 				Parents name:<br>
 				<input type="text" class="parents" name="Parents name">
 				<br>
+				<!--for the name of parents -->
 				Your email:<br>
 				<input type="email" class="email" name="email">
 				<br>
+				<!--for the email  -->
 				Your number:<br>
 				<input type="number" class="number" name="number">
 				<br>
+				<!--here for the number of the visitor -->
 				<textarea id="message" rows="3" cols="80">Send us message</textarea>
 				<br>
+				<!--it is for the place to send msg to us -->
 				<input type="submit" class="submit" value="Submit">
+				<!--here a buttom for submitting the form -->
 			</fieldset>
+			<!--fieldset is closed -->
 		</form>
 		</div></header>
 </div>
 </body>
 </html>
+<!--closing the tags -->

@@ -4,32 +4,36 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-}
+}      
+/*over all style for all the pages.given padding,margin,etc  */
 body{
-  font-family: montserrat;
+  font-family: montserrat;  
+  /*for using font family*/
 }
 nav{
   background:black;
   height: 80px;
   width: 100%;
 }
-.logoo{
-  
+ /*making nav background black in color and its perspective height and width*/
+.logoo{ 
   height: auto;
   width: 78px;
   left:0px;
-
-}
+} 
+/*decorating logo where i kept nepal flag.its according height,width and left positioning*/
 
 nav ul{
   float: right;
   margin-right: 20px;
-}
+} 
+/*nav ul means unlisted items in nav its float to right side*/
 nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
-}
+} 
+/*for the listed items in vav bar,giving display properties,margin and line height*/
 nav ul li a{
   color: white;
   font-size: 17px;
@@ -37,10 +41,12 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
+ /*for the anchor tag used ,giving color to text,text in uppercase,radius for the boxes*/
 a.active,a:hover{
   background: #1b9bff;
   transition: .5s;
-}
+} 
+/*for hover effect in the anchor tags*/
 .checkbtn{
   font-size: 30px;
   color: white;
@@ -50,21 +56,19 @@ a.active,a:hover{
   cursor: pointer;
   display: none;
 }
+ /*some display properties is used for check button in responsive */
 #check{
   display: none;
-}
+} 
+/*to remove  check or tick option */
 
 
 .pk{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-  }
-
-
-
-
-
+  } 
+  /*for the texts used in homepage it has been used*/
 
 @media (max-width: 952px){
   label.logo{
@@ -74,7 +78,7 @@ a.active,a:hover{
   nav ul li a{
     font-size: 16px;
   }
-}
+}  /*media query is used to make the page responive in all devices upto width 952px*/
 @media (max-width: 858px){
   .checkbtn{
     display: block;
@@ -112,11 +116,20 @@ a.active,a:hover{
   #check:checked ~ ul{
     left: 0;
   }
-
-
-
   
-}
+} 
+/*media query for home page nav bar and making responive similarly as above*/
+/*this is styled for the overall page*/
+
+
+
+
+
+
+
+
+
+/*from here index.html is styled*/
 .home{
     display: flex;
     background: url("banner.jpg") no-repeat center;
@@ -126,11 +139,13 @@ a.active,a:hover{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-}
+} 
+/*in class home given display to flex,and added background image and giving its height and position,also using the font family*/
 .home .pk{
   width: 100%;
   display: flex;
 }
+/*inside class home we have another class pk here we give its width and display line*/
 .home .pk .row{
   margin-right: 0;
 }
@@ -162,10 +177,12 @@ a.active,a:hover{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
+ /*here in all we are giving font size,weight,their margin,and borders*/
 .home .home-content a:hover{
     color: crimson;
     background: none;
-}
+} 
+/*this is for giving hover effect in class home-content*/
 
 
 
@@ -207,70 +224,92 @@ a.active,a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
- }   
+ }  
+ /*and here using media query to make responsive page by using different width and properties*/ 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*for cv part*/
-
-.cv,header{
-  
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-.table{
-  width: 100%;
-  max-height: 800px;
-  text-align: center;
-}
-.sidebar{
-  width: 200px;
-  background-color: #1c2833;
-  color: white;
-  padding: 20px;
-}
-#rupak{
-  border-radius: 50%;
-  max-width: 200px;
-
-}
-.below{
-  width: 80%;
+/* for portfolio.html*/
+.portfolio{
   background: #D5D8DC;
-  text-align-last: left;
-
+  width: 100%;
+  height: 100%;
+} 
+/*this is for overall page in portfolio.html giving backgrond color its width and height*/
+.grid{
+  margin: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+} 
+/*display grid properties is used to make placeholder for images,and here its template columns ,gaps and the item alignment is assigned*/
+.grid > article{
+  background: #eee5e9;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0,0.3);
+  border-radius: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform .3s;
+} 
+/*for the article giving a box shadow,radius,width and a transition effect */
+.grid > article:hover{
+  transform: translateY(5px);
+  box-shadow:  2px 2px 6px 0px rgba(0, 0, 0,0.3);
+} 
+/*this is for hover effect of article*/
+.grid > article img{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
+/*here giving border radius direction wise for image*/
+.text{
+  padding: 0 20px 20px;
+}
+/*this is for padding of text in portfolio*/
+.text h3{
+  text-transform: uppercase;
+}
+/*making heading title capital*/
+.text button{
+  background: gold;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/*using the buttom in the images and giving it some style by changing cursor ,text to capitals,width ,font-weight,background color*/
+@media ( max-width: 952px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid > article{
+    text-align: center;
+  }
+}
+/*using media queries and making it changes its template columns as per the width */
 
 
-
-
-
-
-/*contact*/
+/*for contact.html*/
 
 .contact{
 background: #D5D8DC;
   width: 100%;
   height: 620px;
-
-
 }
+/*this is for contact page where given background color ,height and width*/
 
 .contaact{
 max-width: 800px;
@@ -283,10 +322,12 @@ font-size: 15px;
   font-family: 'Texturina', serif;
 
 }
+/*making width of classs contaact,its margin,border,font size and to float it in left side*/
 .about{
   float: right;
   max-width: 100%;
 }
+/*this is for about me where it is given to float and its width*/
 .firstname{
   font-family: 'Texturina', serif;
   font-size: 15px;
@@ -345,6 +386,7 @@ font-size: 15px;
   background: white;
   color:black;
 }
+/*as all number,name ,email,dob and given  a similar pattern of style with font-size,letter gap,background color*/
 .submit{
   font-family: 'Texturina', serif;
   font-size: 15px;
@@ -356,85 +398,69 @@ font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
 }
+/*this is forr submit button and giving its cursor type,its background color,font family,size,border of button etc.*/
 
 
 
 
 
-/*portfolio*/
-.portfolio{
-  background: #D5D8DC;
+/*for cv.html*/
+
+.cv,header{
+  
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  position: relative;
 }
-.grid{
-  margin: 80px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  align-items: center;
-}
-.grid > article{
-  background: #eee5e9;
-  border: none;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0,0.3);
-  border-radius: 20px;
+/*this is for cv and in header we have givem its width and height and position*/
+.table{
+  width: 100%;
+  max-height: 800px;
   text-align: center;
-  width: 250px;
-  transition: transform .3s;
+} 
+/*here we created a table to make cv and here we style it ,its maximun height,width and the text alignment*/
+.sidebar{
+  width: 200px;
+  background-color: #1c2833;
+  color: white;
+  padding: 20px;
+}
+/*here we gave width to the sidebar ,background color and padding*/
+#rupak{
+  border-radius: 50%;
+  max-width: 200px;
+}
+/*this is for image use in cv,its border radiua and max width*/
+.below{
+  width: 80%;
+  background: #D5D8DC;
+  text-align-last: left;
 
 }
-.grid > article:hover{
-  transform: translateY(5px);
-  box-shadow:  2px 2px 6px 0px rgba(0, 0, 0,0.3);
-}
-.grid > article img{
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.text{
-  padding: 0 20px 20px;
-}
-.text h3{
-  text-transform: uppercase;
-
-}
-.text button{
-  background: gold;
-  border-radius: 20px;
-  border: none;
-  color: #fff;
-  padding: 10px;
-  width: 100%;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-@media ( max-width: 952px){
-  .grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 400px){
-  .grid{
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .grid > article{
-    text-align: center;
-  }
-}
+/*this is for another side after sidebar,here its width, backgrond color and text alignment is give*/
 
 
 
 
-/*sitereport*/
+
+
+
+
+
+
+
+
+
+
+
+/* for sitereport.html*/
 .sitereport{
 background: #D5D8DC;
   width: 100%;
   height: 2500px;
-  position: absolute;
+  position: relative;
 }
+/*here for overall page of report giving background color width,height and positon */
 .gridd{
   margin: 20px;
   display: grid;
@@ -442,6 +468,7 @@ background: #D5D8DC;
   grid-gap: 30px;
   align-items: center;
 }
+/*using grid properties in work progress,using template columns,item alignment and gaps in grids*/
 .gridd > article{
   background: #eee5e9;
   border: none;
@@ -450,18 +477,19 @@ background: #D5D8DC;
   text-align: center;
   width: 100%;
   transition: transform .3s;
-
 }
+/*here for article giving it background,its border radius,transition effect similar as in portfolio.html*/
 .gridd > article:hover{
   transform: translateY(5px);
   box-shadow:  2px 2px 6px 0px rgba(0, 0, 0,0.3);
 }
+/*here using hover effect in aricle with box shadow*/
 .gridd > article img{
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
+/*for the image in article its border left and right radius*/
 
 .grid{
   margin: 20px;
@@ -489,13 +517,15 @@ background: #D5D8DC;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+/*similarly as above this is for validation images along with hover effect,image positioning same as above*/
 .text{
   padding: 0 20px 20px;
 }
+/*padding of text in the sitereport*/
 .text h3{
   text-transform: uppercase;
-
 }
+/*making capital letter to headings*/
 
 @media ( max-width: 900px){
 .gridd{
@@ -531,3 +561,5 @@ background: #D5D8DC;
     width: 250px;
   }
 }
+/*using media queries and making it changes its template columns as per the width,also text alignment and widths */
+
